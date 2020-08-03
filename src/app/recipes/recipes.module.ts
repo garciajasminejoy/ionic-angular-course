@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
 
+import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { RecipesPageRoutingModule } from './recipes-routing.module';
-
 import { RecipesPage } from './recipes.page';
 
 @NgModule({
@@ -15,6 +14,6 @@ import { RecipesPage } from './recipes.page';
     IonicModule,
     RecipesPageRoutingModule
   ],
-  declarations: [RecipesPage]
+  declarations: [RecipesPage, RecipeItemComponent]
 })
 export class RecipesPageModule {}
